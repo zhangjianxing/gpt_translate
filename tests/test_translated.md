@@ -1,11 +1,14 @@
 测试数据
-这个数据集包含两个由ChatGPT提供的测试样本，ChatGPT是OpenAI的一个AI语言模型。
-这些样本包括一个markdown表格和一个英文文本段落，可用于测试支持文本和表格格式的中英文翻译软件。
+该数据集包含由OpenAI的AI语言模型ChatGPT提供的两个测试样本。
+这些样本包括一个Markdown表格和一个英文文本段落，可用于测试同时支持文本和表格格式的英译中翻译软件。
 文本测试
-敏捷的棕色狐狸跳过懒狗。这个全字母句至少包含了英文字母表中的每个字母。全字母句经常用于测试字体、键盘和其他与文本相关的工具。除了英文之外，许多其他语言也有全字母句。由于语言的独特特点，有些全字母句更难构造。
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
 表格测试
 
-| 水果 | 颜色 | 价格（美元） |
+| 水果 | 颜色 | 价格（USD） |
 | --- | --- | --- |
 | 苹果 | 红色 | 1.20 |
 | 香蕉 | 黄色 | 0.50 |

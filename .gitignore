@@ -1,3 +1,5 @@
 uploads
+downloads
 my_db.sqlite
 *.log
+.idea

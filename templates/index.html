@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Processing</title>
+</head>
+<body>
+    <h1>PDF Processing</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">翻译文件:</label>
+        <input type="file" name="file" id="file" accept=".pdf" required>
+        <br>
+        <!-- Use a dropdown menu for file_format -->
+        <label for="file_format">选择输出格式:</label>
+        <select name="file_format" id="file_format" required>
+            <option value="PDF">PDF</option>
+            <option value="markdown">Markdown</option>
+        </select>
+
+        <label for="target_language">语言(如: 中文):</label>
+        <input type="text" value="中文" name="target_language" id="target_language" required>
+
+        <br>
+        <input type="submit" value="Upload and Process">
+    </form>
+</body>
+</html>

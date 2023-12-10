@@ -19,7 +19,7 @@ OpenAI 翻译器是一个使用 AI 技术将英文 PDF 书籍翻译成中文的�
 
 OpenAI 翻译器目前还处于早期开发阶段，我正在积极地添加更多功能和改进其性能。我们非常欢迎任何反馈或贡献！
 
-![The_Old_Man_of_the_Sea](images/sample_image_0.png)
+![The_Old_Man_of_the_Sea](../images/sample_image_0.png)
 
 <p align="center">
     <em>"老人与海"</em>
@@ -78,7 +78,7 @@ common:
 python ai_translator/main.py
 ```
 
-![sample_out](images/sample_image_1.png)
+![sample_out](../images/sample_image_1.png)
 
 #### 使用命令行参数
 
@@ -100,7 +100,7 @@ python ai_translator/main.py --model_type GLMModel --glm_model_url $GLM_MODEL_UR
 
 ## 许可证
 
-该项目采用 GPL-3.0 许可证。有关详细信息，请查看 [LICENSE](LICENSE) 文件。
+该项目采用 GPL-3.0 许可证。有关详细信息，请查看 [LICENSE](../LICENSE) 文件。
 
 
 
