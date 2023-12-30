@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="coeus" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="openai (3)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="openai11" project-jdk-type="Python SDK" />
 </project>

@@ -7,5 +7,7 @@ reportlab
 pandas
 loguru
 openai
+langchain
+gradio
 sqlitedict
 flask

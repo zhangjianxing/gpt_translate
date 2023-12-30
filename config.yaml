@@ -1,11 +1,17 @@
-OpenAIModel:
-  model: "gpt-3.5-turbo"
-  api_key: "your_openai_api_key"
+#OpenAIModel:
+#  model: "gpt-3.5-turbo"
+#  api_key: "your_openai_api_key"
+#
+#GLMModel:
+#  model_url: "your_chatglm_model_url"
+#  timeout: 300
+#
+#common:
+#  book: "tests/test.pdf"
+#  file_format: "markdown"
 
-GLMModel:
-  model_url: "your_chatglm_model_url"
-  timeout: 300
-
-common:
-  book: "tests/test.pdf"
-  file_format: "markdown"
+model_name: "gpt-3.5-turbo"
+input_file: "tests/test.pdf"
+output_file_format: "markdown"
+source_language: "English"
+target_language: "Chinese"

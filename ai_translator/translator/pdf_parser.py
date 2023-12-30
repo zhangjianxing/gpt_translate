@@ -14,8 +14,7 @@ class PDFParser:
 
         with pdfplumber.open(pdf_file_path) as pdf:
             if pages is not None and pages > len(pdf.pages):
-                pages = len(pdf.pages)
-                # raise PageOutOfRangeException(len(pdf.pages), pages)
+                raise PageOutOfRangeException(len(pdf.pages), pages)
 
             if pages is None:
                 pages_to_parse = pdf.pages
@@ -45,6 +44,8 @@ class PDFParser:
                     text_content = Content(content_type=ContentType.TEXT, original=cleaned_raw_text)
                     page.add_content(text_content)
                     LOG.debug(f"[raw_text]\n {cleaned_raw_text}")
+
+
 
                 # Handling tables
                 if tables:
