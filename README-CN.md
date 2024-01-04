@@ -1,7 +1,7 @@
 # OpenAI-Translator
 
 <p align="center">
-    <br> <a href="README.md"> English </a> | 中文 | <a href="README-homework.md"> 作业说明 </a>
+    <br> <a href="README-EN.md"> English </a> | 中文 | <a href="README.md"> 作业说明 </a>
 </p>
 <p align="center">
     <em>所有的代码和文档完全由 OpenAI 的 GPT-4 模型生成</em>

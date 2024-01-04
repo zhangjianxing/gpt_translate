@@ -2,6 +2,7 @@ from typing import Optional
 
 from ai_translator.translator.pdf_parser import PDFParser
 from ai_translator.translator.translation_chain import TranslationChain
+from ai_translator.translator.translation_chain_glm import TranslationChainGLM
 from ai_translator.translator.writer import Writer
 
 
@@ -19,6 +20,7 @@ class PDFTranslator:
             target_language: str = 'Chinese',
             style: str = 'normal',
             max_pages='2',
+            glm_host='',
     ):
         pages = None
         try:
@@ -32,7 +34,12 @@ class PDFTranslator:
         for page_idx, page in enumerate(self.book.pages):
             for content_idx, content in enumerate(page.contents):
                 # Translate content.original
-                translation, status = self.translate_chain.run(content, source_language, target_language, style)
+                if glm_host == '':
+                    translation, status = self.translate_chain.run(content, source_language, target_language, style)
+                else:
+                    print("use GLM")
+                    translate_chain = TranslationChainGLM(glm_host)
+                    translation, status = translate_chain.run(content, source_language, target_language, style)
                 # Update the content in self.book.pages directly
                 self.book.pages[page_idx].contents[content_idx].set_translation(translation, status)
 
